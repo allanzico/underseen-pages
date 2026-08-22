@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Jost:wght@400;500;600&display=swap');
+@font-face { font-family: 'Underseen Fraunces'; font-style: italic; font-weight: 400; src: url('fonts/Fraunces-Italic.ttf') format('truetype'); }
+@font-face { font-family: 'Underseen Fraunces'; font-style: italic; font-weight: 600 700; src: url('fonts/Fraunces-SemiBoldItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Underseen Jost'; font-style: normal; font-weight: 400; src: url('fonts/Jost_400Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Underseen Jost'; font-style: normal; font-weight: 600; src: url('fonts/Jost_600SemiBold.ttf') format('truetype'); }
+@font-face { font-family: 'Underseen Commit Mono'; font-style: normal; font-weight: 400; src: url('fonts/CommitMono-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Underseen Commit Mono'; font-style: normal; font-weight: 600; src: url('fonts/CommitMono-SemiBold.ttf') format('truetype'); }
 
 :root {
   color-scheme: light;
@@ -24,7 +29,7 @@ body {
   background: linear-gradient(rgba(26, 23, 18, 0.035) 1px, transparent 1px), var(--bg);
   background-size: 100% 6px;
   color: var(--ink);
-  font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Underseen Jost', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.65;
 }
 
@@ -75,7 +80,7 @@ a:focus-visible { outline: 2px solid var(--warn); outline-offset: 4px; }
 .instrument-status,
 .lever,
 .machine-label {
-  font-family: 'Commit Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: 'Underseen Commit Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -90,7 +95,7 @@ a:focus-visible { outline: 2px solid var(--warn); outline-offset: 4px; }
 
 .wordmark {
   color: var(--ink);
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Underseen Fraunces', Georgia, serif;
   font-size: 30px;
   font-style: italic;
   font-weight: 700;
@@ -145,10 +150,10 @@ main::before { background: var(--ink); content: ''; height: 3px; left: 0; opacit
 
 .eyebrow { color: var(--ink-dim); font-size: 11px; font-weight: 600; line-height: 1.4; }
 
-h1, h2 { color: var(--ink); font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 600; line-height: 1.08; }
+h1, h2 { color: var(--ink); font-family: 'Underseen Fraunces', Georgia, serif; font-style: italic; font-weight: 600; line-height: 1.08; }
 h1 { font-size: clamp(42px, 7vw, 76px); letter-spacing: -0.055em; margin: 14px 0 22px; max-width: 780px; }
 h2 { border-top: 1px solid var(--hair); font-size: clamp(25px, 3vw, 34px); letter-spacing: -0.035em; margin: 48px 0 14px; max-width: 760px; padding-top: 17px; }
-h2::before { color: var(--ink-faint); content: '//'; font-family: 'Commit Mono', 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; font-style: normal; letter-spacing: 0.12em; margin-right: 10px; vertical-align: middle; }
+h2::before { color: var(--ink-faint); content: '//'; font-family: 'Underseen Commit Mono', ui-monospace, monospace; font-size: 11px; font-style: normal; letter-spacing: 0.12em; margin-right: 10px; vertical-align: middle; }
 
 p, li { font-size: 16px; }
 p { max-width: 760px; }
@@ -164,7 +169,7 @@ p { max-width: 760px; }
 }
 
 .instrument-label, .instrument-status { color: #C8BFAF; display: block; font-size: 10px; line-height: 1.5; }
-.instrument-title { color: var(--paper); font-family: 'Fraunces', Georgia, serif; font-size: 30px; font-style: italic; font-weight: 600; letter-spacing: -0.04em; line-height: 1.05; margin: 20px 0 12px; }
+.instrument-title { color: var(--paper); font-family: 'Underseen Fraunces', Georgia, serif; font-size: 30px; font-style: italic; font-weight: 600; letter-spacing: -0.04em; line-height: 1.05; margin: 20px 0 12px; }
 .instrument-copy { color: #D8D0C3; font-size: 15px; line-height: 1.5; }
 .instrument-status { border-top: 1px solid var(--edge-strong); margin-top: 22px; padding-top: 14px; }
 
@@ -194,12 +199,12 @@ p { max-width: 760px; }
 
 main ul, main ol { list-style: none; margin: 0; max-width: 760px; padding: 0; }
 main li { border-bottom: 1px solid rgba(185, 173, 152, 0.8); padding: 13px 0 13px 23px; position: relative; }
-main ul li::before { color: var(--ink-faint); content: '—'; font-family: 'Commit Mono', 'IBM Plex Mono', ui-monospace, monospace; left: 0; position: absolute; top: 13px; }
+main ul li::before { color: var(--ink-faint); content: '—'; font-family: 'Underseen Commit Mono', ui-monospace, monospace; left: 0; position: absolute; top: 13px; }
 main ol { counter-reset: section-step; }
 main ol li { counter-increment: section-step; padding-left: 42px; }
-main ol li::before { color: var(--ink-faint); content: counter(section-step, decimal-leading-zero); font-family: 'Commit Mono', 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; left: 0; letter-spacing: 0.08em; position: absolute; top: 16px; }
+main ol li::before { color: var(--ink-faint); content: counter(section-step, decimal-leading-zero); font-family: 'Underseen Commit Mono', ui-monospace, monospace; font-size: 11px; left: 0; letter-spacing: 0.08em; position: absolute; top: 16px; }
 
-footer { align-items: center; border-top: 1px solid var(--hair); color: var(--ink-faint); display: flex; flex-wrap: wrap; font-family: 'Commit Mono', 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px; gap: 12px 22px; letter-spacing: 0.08em; margin-top: 58px; padding-top: 18px; text-transform: uppercase; }
+footer { align-items: center; border-top: 1px solid var(--hair); color: var(--ink-faint); display: flex; flex-wrap: wrap; font-family: 'Underseen Commit Mono', ui-monospace, monospace; font-size: 10px; gap: 12px 22px; letter-spacing: 0.08em; margin-top: 58px; padding-top: 18px; text-transform: uppercase; }
 footer a { color: var(--ink-dim); }
 
 @media (max-width: 760px) {
